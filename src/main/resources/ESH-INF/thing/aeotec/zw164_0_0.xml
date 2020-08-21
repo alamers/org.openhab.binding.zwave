@@ -14,6 +14,25 @@ Indoor Siren 6 and Doorbell 6<br /><h1>Overview</h1><p>Siren 6 is your home’s 
 
     <!-- CHANNEL DEFINITIONS -->
     <channels>
+      <channel id="play_tone" typeId="scene_number">
+        <label>Play tone</label>
+        <properties>
+		  <property name="binding:*:DecimalType">COMMAND_CLASS_SOUND_SWITCH</property>
+        </properties>
+      </channel>
+      <channel id="volume" typeId="switch_dimmer">
+        <label>Volume</label>
+        <properties>
+		  <property name="binding:*:PercentType">COMMAND_CLASS_SOUND_SWITCH;type=VOLUME</property>
+        </properties>
+      </channel>
+	  <!--
+	   <channel id="test_output4" typeId="switch_binary">
+        <label>Test output 4</label>
+        <properties>
+		  <property name="binding:Command:OnOffType">COMMAND_CLASS_SOUND_SWITCH,COMMAND_CLASS_BASIC</property>
+        </properties>
+      </channel>-->
       <channel id="alarm_power" typeId="alarm_power">
         <label>Alarm (power)</label>
         <properties>

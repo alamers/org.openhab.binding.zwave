@@ -88,8 +88,8 @@ public class ZWaveSoundSwitchCommandClass extends ZWaveCommandClass {
         //int defaultTone = payload.getPayloadByte(3);
         logger.debug("NODE {}: Config report - volume={}", this.getNode().getNodeId(), volume);
 
-        ZWaveCommandClassValueEvent zEvent = new ZWaveCommandClassValueEvent(this.getNode().getNodeId(), endpoint,
-                getCommandClass(), volume);
+        ZWaveCommandClassValueEvent zEvent = new ZWaveSoundSwitchEvent(this.getNode().getNodeId(), endpoint,
+                volume , true );
         this.getController().notifyEventListeners(zEvent);
     }
      
@@ -99,8 +99,8 @@ public class ZWaveSoundSwitchCommandClass extends ZWaveCommandClass {
         int playTone = payload.getPayloadByte(2);
         logger.debug("NODE {}: Tone play report - playTone={}", this.getNode().getNodeId(), playTone);
 
-        ZWaveCommandClassValueEvent zEvent = new ZWaveCommandClassValueEvent(this.getNode().getNodeId(), endpoint,
-                getCommandClass(), playTone);
+        ZWaveCommandClassValueEvent zEvent = new ZWaveSoundSwitchEvent(this.getNode().getNodeId(), endpoint,
+                playTone , false );
         this.getController().notifyEventListeners(zEvent);
     }
 
@@ -139,4 +139,20 @@ public class ZWaveSoundSwitchCommandClass extends ZWaveCommandClass {
         return new ZWaveCommandClassTransactionPayloadBuilder(getNode().getNodeId(), getCommandClass(), CONFIGURATION_SET)
                 .withPayload(volume,0).withPriority(TransactionPriority.Set).build();
     }
+
+    public class ZWaveSoundSwitchEvent extends ZWaveCommandClassValueEvent {
+        public boolean volume;
+
+        /**
+         * Constructor. Creates a instance of the ZWaveColorValueEvent class.
+         *
+         * @param nodeId the nodeId of the event
+         * @param endpoint the endpoint of the event.
+         * @param value the value for the event.
+         */
+        public ZWaveSoundSwitchEvent(int nodeId, int endpoint, int value , boolean volume) {
+            super(nodeId, endpoint, CommandClass.COMMAND_CLASS_SWITCH_COLOR, value);
+            this.volume = volume;
+        }
+    } 
 }

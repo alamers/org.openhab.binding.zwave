@@ -24,6 +24,7 @@ import org.openhab.binding.zwave.handler.ZWaveThingChannel;
 import org.openhab.binding.zwave.internal.protocol.ZWaveNode;
 import org.openhab.binding.zwave.internal.protocol.commandclass.ZWaveCommandClass;
 import org.openhab.binding.zwave.internal.protocol.commandclass.ZWaveSoundSwitchCommandClass;
+import org.openhab.binding.zwave.internal.protocol.commandclass.ZWaveSoundSwitchCommandClass.ZWaveSoundSwitchEvent;
 import org.openhab.binding.zwave.internal.protocol.event.ZWaveCommandClassValueEvent;
 import org.openhab.binding.zwave.internal.protocol.transaction.ZWaveCommandClassTransactionPayload;
 import org.slf4j.Logger;
@@ -46,7 +47,7 @@ public class ZWaveSoundSwitchConverter extends ZWaveCommandClassConverter {
     public ZWaveSoundSwitchConverter(ZWaveControllerHandler controller) {
         super(controller);
     }
-/*
+
     @Override
     public List<ZWaveCommandClassTransactionPayload> executeRefresh(ZWaveThingChannel channel, ZWaveNode node) {
         ZWaveSoundSwitchCommandClass commandClass = (ZWaveSoundSwitchCommandClass) node
@@ -57,13 +58,24 @@ public class ZWaveSoundSwitchConverter extends ZWaveCommandClassConverter {
 
         logger.debug("NODE {}: Generating poll message for {}, endpoint {}", node.getNodeId(),
                 commandClass.getCommandClass(), channel.getEndpoint());
-        ZWaveCommandClassTransactionPayload transaction = node.encapsulate(commandClass.getValueMessage(),
+        ZWaveCommandClassTransactionPayload payload = null;
+        String type = channel.getArguments().get("type");
+        if (type != null && type.equals("VOLUME") ) 
+        {
+            payload = commandClass.getConfigMessage();
+        }
+        else
+        {
+            payload = commandClass.getValueMessage();
+        }
+        
+        ZWaveCommandClassTransactionPayload transaction = node.encapsulate(payload,
                 channel.getEndpoint());
         List<ZWaveCommandClassTransactionPayload> response = new ArrayList<ZWaveCommandClassTransactionPayload>(1);
         response.add(transaction);
         return response;
     }
-*/
+
     @Override
     public List<ZWaveCommandClassTransactionPayload> receiveCommand(ZWaveThingChannel channel, ZWaveNode node,
             Command command) {
@@ -71,10 +83,12 @@ public class ZWaveSoundSwitchConverter extends ZWaveCommandClassConverter {
                 ZWaveCommandClass.CommandClass.COMMAND_CLASS_SOUND_SWITCH, channel.getEndpoint());
 
         ZWaveCommandClassTransactionPayload payload = null;
-        /*if (command instanceof PercentType) {
+        String type = channel.getArguments().get("type");
+        if (type != null && type.equals("VOLUME") ) 
+        {
             payload = commandClass.setConfigMessage(((PercentType) command).intValue());
         }
-        else*/
+        else
         {
             payload = commandClass.setValueMessage(((DecimalType) command).intValue());
         }
@@ -93,13 +107,13 @@ public class ZWaveSoundSwitchConverter extends ZWaveCommandClassConverter {
 
     @Override
     public State handleEvent(ZWaveThingChannel channel, ZWaveCommandClassValueEvent event) {
-        /*Integer value = (Integer) event.getValue();
-
-        switch (channel.getDataType()) {
-            case PercentType:
-                return new PercentType(value);
-            default:
-        }*/
+        ZWaveSoundSwitchEvent soundEvent = (ZWaveSoundSwitchEvent) event;
+        String type = channel.getArguments().get("type");
+        boolean volumeChannel = type != null && type.equals("VOLUME");
+        if( soundEvent.volume != volumeChannel )
+            return null;
+        if( soundEvent.volume )
+            return new PercentType((Integer)event.getValue());
         return new DecimalType((Integer) event.getValue());
     }
 }
