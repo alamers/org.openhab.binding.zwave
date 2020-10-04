@@ -10,7 +10,7 @@ This describes the Z-Wave device *MIMO2+*, manufactured by *FortrezZ LLC* with t
 
 The device is in the category of *Sensor*, defining Device used to measure something.
 
-![MIMO2+ product image](https://www.cd-jackson.com/zwave_device_uploads/700/700_default.png)
+![MIMO2+ product image](https://opensmarthouse.org/zwavedatabase/700/image/)
 
 
 The MIMO2+ supports routing. This allows the device to communicate using other routing enabled devices as intermediate routers.  This device is also able to participate in the routing of data between other devices in the mesh network.
@@ -386,7 +386,7 @@ Association group 3 supports 2 nodes.
 | COMMAND_CLASS_NO_OPERATION_V1| |
 | COMMAND_CLASS_BASIC_V1| |
 | COMMAND_CLASS_SWITCH_BINARY_V1| |
-| COMMAND_CLASS_SENSOR_MULTILEVEL_V9| Linked to BASIC|
+| COMMAND_CLASS_SENSOR_MULTILEVEL_V9| |
 | COMMAND_CLASS_ASSOCIATION_GRP_INFO_V1| |
 | COMMAND_CLASS_DEVICE_RESET_LOCALLY_V1| |
 | COMMAND_CLASS_ZWAVEPLUS_INFO_V1| |
@@ -404,7 +404,7 @@ Association group 3 supports 2 nodes.
 |---------------|---------|
 | COMMAND_CLASS_NO_OPERATION_V1| |
 | COMMAND_CLASS_BASIC_V1| |
-| COMMAND_CLASS_SENSOR_MULTILEVEL_V9| Linked to BASIC|
+| COMMAND_CLASS_SENSOR_MULTILEVEL_V9| |
 | COMMAND_CLASS_ASSOCIATION_GRP_INFO_V1| |
 | COMMAND_CLASS_ASSOCIATION_V2| |
 #### Endpoint 2
@@ -413,7 +413,7 @@ Association group 3 supports 2 nodes.
 |---------------|---------|
 | COMMAND_CLASS_NO_OPERATION_V1| |
 | COMMAND_CLASS_BASIC_V1| |
-| COMMAND_CLASS_SENSOR_MULTILEVEL_V9| Linked to BASIC|
+| COMMAND_CLASS_SENSOR_MULTILEVEL_V9| |
 | COMMAND_CLASS_ASSOCIATION_GRP_INFO_V1| |
 | COMMAND_CLASS_ASSOCIATION_V2| |
 #### Endpoint 3
@@ -433,10 +433,10 @@ Association group 3 supports 2 nodes.
 
 ### Documentation Links
 
-* [User Manual](https://www.cd-jackson.com/zwave_device_uploads/700/User-Manual-MIMO2--8May2017-removed-MI-address.pdf)
-* [Technical Manual](https://www.cd-jackson.com/zwave_device_uploads/700/Tech-Appendix-MIMO2--8May2017-removed-MI-address.pdf)
+* [User Manual](https://opensmarthouse.org/zwavedatabase/700/User-Manual-MIMO2--8May2017-removed-MI-address.pdf)
+* [Technical Manual](https://opensmarthouse.org/zwavedatabase/700/Tech-Appendix-MIMO2--8May2017-removed-MI-address.pdf)
 
 ---
 
 Did you spot an error in the above definition or want to improve the content?
-You can [contribute to the database here](http://www.cd-jackson.com/index.php/zwave/zwave-device-database/zwave-device-list/devicesummary/700).
+You can [contribute to the database here](https://opensmarthouse.org/zwavedatabase/700).

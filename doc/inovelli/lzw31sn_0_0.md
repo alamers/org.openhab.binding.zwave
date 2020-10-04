@@ -10,7 +10,7 @@ This describes the Z-Wave device *LZW31-SN*, manufactured by *Inovelli* with the
 
 The device is in the category of *Wall Switch*, defining Any device attached to the wall that controls a binary status of something, for ex. a light switch.
 
-![LZW31-SN product image](https://www.cd-jackson.com/zwave_device_uploads/1146/1146_default.jpg)
+![LZW31-SN product image](https://opensmarthouse.org/zwavedatabase/1146/image/)
 
 
 The LZW31-SN supports routing. This allows the device to communicate using other routing enabled devices as intermediate routers.  This device is also able to participate in the routing of data between other devices in the mesh network.
@@ -125,7 +125,7 @@ The following state translation is provided for this channel to the ```Number```
 
 ## Device Configuration
 
-The following table provides a summary of the 22 configuration parameters available in the LZW31-SN.
+The following table provides a summary of the 24 configuration parameters available in the LZW31-SN.
 Detailed information on each parameter can be found in the sections below.
 
 | Param | Name  | Description |
@@ -152,6 +152,8 @@ Detailed information on each parameter can be found in the sections below.
 | 20 | Energy Reports | Energy Reports |
 | 21 | AC Power Type | AC Power Type |
 | 22 | Switch Type | Switch Type |
+| 51 | Instant On | Instant On |
+| 52 | Enable "smart bulb" mode | Enable "smart bulb" mode |
 
 ### Parameter 1: Dimming Speed (Z-Wave)
 
@@ -415,6 +417,38 @@ The manufacturer defined default value is ```0``` (Single-Pole (One Switch)).
 This parameter has the configuration ID ```config_22_1``` and is of type ```INTEGER```.
 
 
+### Parameter 51: Instant On
+
+Instant On
+Enable instant on (ie: disable 700ms delay at the switch). If delay is disabled, scene control will be limited to button 1 (ie: tap up 1x or tap down 1x) and button 7 (config button). All other buttons (2-6) will be disabled.
+The following option values may be configured -:
+
+| Value  | Description |
+|--------|-------------|
+| 0 | No delay |
+| 1 | 700ms delay |
+
+The manufacturer defined default value is ```1``` (700ms delay).
+
+This parameter has the configuration ID ```config_51_1``` and is of type ```INTEGER```.
+
+
+### Parameter 52: Enable "smart bulb" mode
+
+Enable "smart bulb" mode
+Smart bulb mode: If set to 1, power will output maximum % when dimmer is on to optimize performance with smart bulbs.
+The following option values may be configured -:
+
+| Value  | Description |
+|--------|-------------|
+| 0 | normal bulb |
+| 1 | smart bulb |
+
+The manufacturer defined default value is ```0``` (normal bulb).
+
+This parameter has the configuration ID ```config_52_1``` and is of type ```INTEGER```.
+
+
 ## Association Groups
 
 Association groups allow the device to send unsolicited reports to the controller, or other devices in the network. Using association groups can allow you to eliminate polling, providing instant feedback of a device state change without unnecessary network traffic.
@@ -474,9 +508,9 @@ Association group 4 supports 5 nodes.
 
 ### Documentation Links
 
-* [Product manual](https://www.cd-jackson.com/zwave_device_uploads/1146/LZW31-SN-Manual.pdf)
+* [Product manual](https://opensmarthouse.org/zwavedatabase/1146/LZW31-SN-Manual.pdf)
 
 ---
 
 Did you spot an error in the above definition or want to improve the content?
-You can [contribute to the database here](http://www.cd-jackson.com/index.php/zwave/zwave-device-database/zwave-device-list/devicesummary/1146).
+You can [contribute to the database here](https://opensmarthouse.org/zwavedatabase/1146).

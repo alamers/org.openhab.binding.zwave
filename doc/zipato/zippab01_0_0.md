@@ -10,7 +10,7 @@ This describes the Z-Wave device *ZIP-PAB01*, manufactured by *[Zipato](http://w
 
 The device is in the category of *Wall Switch*, defining Any device attached to the wall that controls a binary status of something, for ex. a light switch.
 
-![ZIP-PAB01 product image](https://www.cd-jackson.com/zwave_device_uploads/899/899_default.jpg)
+![ZIP-PAB01 product image](https://opensmarthouse.org/zwavedatabase/899/image/)
 
 
 The ZIP-PAB01 supports routing. This allows the device to communicate using other routing enabled devices as intermediate routers.  This device is also able to participate in the routing of data between other devices in the mesh network.
@@ -53,11 +53,13 @@ The following table summarises the channels available for the ZIP-PAB01 -:
 | Electric meter (amps) | meter_current | meter_current | Energy | Number | 
 | Electric meter (power factor) | meter_powerfactor | meter_powerfactor | Energy | Number | 
 | Electric meter (watts) | meter_watts | meter_watts | Energy | Number | 
+| Meter Reset | meter_reset | meter_reset | Energy | Switch | 
 | Electric meter (volts) 1 | meter_voltage1 | meter_voltage | Energy | Number | 
 | Electric meter (kWh) 1 | meter_kwh1 | meter_kwh | Energy | Number | 
 | Electric meter (amps) 1 | meter_current1 | meter_current | Energy | Number | 
 | Electric meter (power factor) 1 | meter_powerfactor1 | meter_powerfactor | Energy | Number | 
 | Electric meter (watts) 1 | meter_watts1 | meter_watts | Energy | Number | 
+| Meter Reset | meter_reset1 | meter_reset | Energy | Switch | 
 | Electric meter (volts) 2 | meter_voltage2 | meter_voltage | Energy | Number | 
 | Electric meter (kWh) 2 | meter_kwh2 | meter_kwh | Energy | Number | 
 | Electric meter (amps) 2 | meter_current2 | meter_current | Energy | Number | 
@@ -94,6 +96,11 @@ Indicates the instantaneous power consumption.
 
 The ```meter_watts``` channel is of type ```meter_watts``` and supports the ```Number``` item and is in the ```Energy``` category. This is a read only channel so will only be updated following state changes from the device.
 
+### Meter Reset
+Reset the meter.
+
+The ```meter_reset``` channel is of type ```meter_reset``` and supports the ```Switch``` item and is in the ```Energy``` category.
+
 ### Electric meter (volts) 1
 Indicates the instantaneous voltage.
 
@@ -118,6 +125,11 @@ The ```meter_powerfactor1``` channel is of type ```meter_powerfactor``` and supp
 Indicates the instantaneous power consumption.
 
 The ```meter_watts1``` channel is of type ```meter_watts``` and supports the ```Number``` item and is in the ```Energy``` category. This is a read only channel so will only be updated following state changes from the device.
+
+### Meter Reset
+Reset the meter.
+
+The ```meter_reset1``` channel is of type ```meter_reset``` and supports the ```Switch``` item and is in the ```Energy``` category.
 
 ### Electric meter (volts) 2
 Indicates the instantaneous voltage.
@@ -288,9 +300,9 @@ Association group 3 supports 1 node.
 
 ### Documentation Links
 
-* [User Manual](https://www.cd-jackson.com/zwave_device_uploads/899/ZIP-PAB01.pdf)
+* [User Manual](https://opensmarthouse.org/zwavedatabase/899/ZIP-PAB01.pdf)
 
 ---
 
 Did you spot an error in the above definition or want to improve the content?
-You can [contribute to the database here](http://www.cd-jackson.com/index.php/zwave/zwave-device-database/zwave-device-list/devicesummary/899).
+You can [contribute to the database here](https://opensmarthouse.org/zwavedatabase/899).
