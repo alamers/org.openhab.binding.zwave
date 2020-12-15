@@ -7,7 +7,7 @@ title: ZMNHCD - ZWave
 
 # ZMNHCD Flush Shutter
 This describes the Z-Wave device *ZMNHCD*, manufactured by *[Goap](http://www.qubino.com/)* with the thing type UID of ```qubino_zmnhcd_00_000```.
-This version of the device is limited to firmware versions below 4.0
+This version of the device is limited to firmware versions below 4.1
 
 The device is in the category of *Blinds*, defining Roller shutters, window blinds, etc..
 
@@ -40,6 +40,10 @@ To enable endpoint 2 (lamella tilt for venetian blinds), follow the procedure:
 
   * press push button I1 five times within 3s (5 times change switch state within 3 seconds) in the first 60 seconds after the module is connected to the power supply or
   * press service button S (only applicable for 24 V SELV supply voltage) for more than 6 second. 
+
+### General Usage Information
+
+
 
 ## Channels
 
@@ -482,8 +486,8 @@ Association group 5 supports 16 nodes.
 
 ### Documentation Links
 
-* [User Manual 19.08.2015](https://opensmarthouse.org/zwavedatabase/614/ZMNHCD-VER-S1-19-08-2015.pdf)
-* [User Manual v1.4](https://opensmarthouse.org/zwavedatabase/614/Qubino-Flush-Shutter-PLUS-user-manual-V1-4.pdf)
+* [User Manual 19.08.2015](https://opensmarthouse.org/zwavedatabase/614/reference/ZMNHCD-VER-S1-19-08-2015.pdf)
+* [User Manual v1.4](https://opensmarthouse.org/zwavedatabase/614/reference/Qubino-Flush-Shutter-PLUS-user-manual-V1-4.pdf)
 
 ---
 

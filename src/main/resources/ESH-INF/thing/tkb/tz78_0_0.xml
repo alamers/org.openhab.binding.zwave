@@ -8,7 +8,7 @@
   <thing-type id="tkb_tz78_00_000" listed="false">
     <label>TZ78 In Wall Micro Switch</label>
     <description><![CDATA[
-In Wall Micro Switch<br /><h1>Overview</h1><p>This insert switch module in a transceiver which is a Z-Wave enabled device and is fully compatible with any Z-Wave enabled network.</p> <p>Z-Wave enabled devices displaying the Z-Wave logo can also be used with it regardless of the manufacturer, and ours can also be used in other manufacturer's Z-Wave enabled networks.</p> <p>Remote On/Off control of the connected load is possible with other manufacturer's wireless controller. Each switch is designed to act as a repeater. Repeaters will re-transmit the RF signal to ensure that the signal is received by its intended destination by routing the signal around obstacles and radio dead spots.</p> <br /><h2>Inclusion Information</h2><p>Pressing On/Off button three times within 1.5 seconds will enter inclusion mode.</p> <br /><h2>Exclusion Information</h2><p>Pressing On/Off button three times within 1.5 seconds will enter exclusion mode.</p>
+In Wall Micro Switch<br /> <h1>Overview</h1><p>This insert switch module in a transceiver which is a Z-Wave enabled device and is fully compatible with any Z-Wave enabled network.</p> <p>Z-Wave enabled devices displaying the Z-Wave logo can also be used with it regardless of the manufacturer, and ours can also be used in other manufacturer's Z-Wave enabled networks.</p> <p>Remote On/Off control of the connected load is possible with other manufacturer's wireless controller. Each switch is designed to act as a repeater. Repeaters will re-transmit the RF signal to ensure that the signal is received by its intended destination by routing the signal around obstacles and radio dead spots.</p> <br /> <h2>Inclusion Information</h2><p>Pressing On/Off button three times within 1.5 seconds will enter inclusion mode.</p> <br /> <h2>Exclusion Information</h2><p>Pressing On/Off button three times within 1.5 seconds will enter exclusion mode.</p>
     ]]></description>
     <category>WallSwitch</category>
 
@@ -55,6 +55,7 @@ In Wall Micro Switch<br /><h1>Overview</h1><p>This insert switch module in a tra
           <option value="0">LED ON when load is ON</option>
           <option value="1">LED ON when load is OFF</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_2_1" type="integer" groupName="configuration">
@@ -65,12 +66,14 @@ In Wall Micro Switch<br /><h1>Overview</h1><p>This insert switch module in a tra
           <option value="0">No state memory after pwr failure</option>
           <option value="1">State memory after pwr failure</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
-      <parameter name="config_3_1" type="integer" groupName="configuration">
+      <parameter name="config_3_1" type="integer" groupName="configuration"
+                 min="1" max="3">
         <label>3: Switch Mode</label>
         <description><![CDATA[
-Edge or Pulse mode or EdgeToggle mode<br /><h1>Overview</h1><p>Edge mode: this mode is suitable for the bi stable wall switch that has indicator point on the switch, and the same position correspond to same state of relay1.<br />Pulse mode: this mode is suitable for the toggle type wall switch to swap the state of Relay1.<br />Edge-Toggle mode: this mode is suitable for the normal bi-stable switch, every time when change the state of the wall switch will also swap the state of Relay1.<br /><br /></p>
+Edge or Pulse mode or EdgeToggle mode<br /> <h1>Overview</h1><p>Edge mode: this mode is suitable for the bi stable wall switch that has indicator point on the switch, and the same position correspond to same state of relay1.<br />Pulse mode: this mode is suitable for the toggle type wall switch to swap the state of Relay1.<br />Edge-Toggle mode: this mode is suitable for the normal bi-stable switch, every time when change the state of the wall switch will also swap the state of Relay1.<br /><br /></p>
         ]]></description>
         <default>3</default>
         <options>
@@ -83,6 +86,11 @@ Edge or Pulse mode or EdgeToggle mode<br /><h1>Overview</h1><p>Edge mode: this m
       <!-- ASSOCIATION DEFINITIONS -->
       <parameter name="group_1" type="text" groupName="association" multiple="true">
         <label>1: Lifeline</label>
+        <multipleLimit>5</multipleLimit>
+      </parameter>
+
+      <parameter name="group_2" type="text" groupName="association" multiple="true">
+        <label>2: On/Off</label>
         <multipleLimit>5</multipleLimit>
       </parameter>
 

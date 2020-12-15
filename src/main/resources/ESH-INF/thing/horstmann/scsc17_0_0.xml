@@ -8,7 +8,7 @@
   <thing-type id="horstmann_scsc17_00_000" listed="false">
     <label>SCSC-17 7 Day Room Thermostat</label>
     <description><![CDATA[
-7 Day Room Thermostat<br /><h1>Overview</h1><p>Mains Operated Programmable Room Thermostat</p> <br /><h2>Inclusion Information</h2><ul><li>On the C-Stat programmable stat, go to Zwave Menu</li> <li>Press INCLUDE/NODE RECEIVER</li> </ul><br /><h2>Exclusion Information</h2><p>not provided</p> <br /><h2>Wakeup Information</h2><p>not provided</p>
+7 Day Room Thermostat<br /> <h1>Overview</h1><p>Mains Operated Programmable Room Thermostat</p> <br /> <h2>Inclusion Information</h2><ul><li>On the C-Stat programmable stat, go to Zwave Menu</li> <li>Press INCLUDE/NODE RECEIVER</li> </ul> <br /> <h2>Exclusion Information</h2><p>not provided</p> <br /> <h2>Wakeup Information</h2><p>not provided</p>
     ]]></description>
     <category>HVAC</category>
 
@@ -84,6 +84,7 @@
           <option value="0">Celsius</option>
           <option value="255">Kelvin</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_2_1" type="integer" groupName="configuration"
@@ -91,6 +92,7 @@
         <label>2: Lower temperature limit</label>
         <description>Defines the minimum temperature. Steps are 1C</description>
         <default>5</default>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_3_1" type="integer" groupName="configuration"
@@ -98,15 +100,17 @@
         <label>3: Upper temperature limit</label>
         <description>Defines the maximum temperature. Steps are 1C</description>
         <default>5</default>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_4_1" type="integer" groupName="configuration"
                  min="0" max="255">
         <label>4: Delta T</label>
         <description><![CDATA[
-Defines the temperature steps of the heating control<br /><h1>Overview</h1><p>Defines the temperature steps of the heating control value is 0.1 °С.</p> <p>0.1 ̊C / ̊F - 50 0.1 ̊C / ̊F</p>
+Defines the temperature steps of the heating control<br /> <h1>Overview</h1><p>Defines the temperature steps of the heating control value is 0.1 °С.</p> <p>0.1 ̊C / ̊F - 50 0.1 ̊C / ̊F</p>
         ]]></description>
         <default>5</default>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <!-- ASSOCIATION DEFINITIONS -->

@@ -8,7 +8,7 @@
   <thing-type id="ge_zw3102_00_000" listed="false">
     <label>ZW3102 Jasco Energy Monitoring Lamp Dimmer</label>
     <description><![CDATA[
-Jasco Energy Monitoring Lamp Dimmer<br /><h1>Overview</h1><p>Energy Monitoring Lamp Module</p>
+Jasco Energy Monitoring Lamp Dimmer<br /> <h1>Overview</h1><p>Energy Monitoring Lamp Module</p>
     ]]></description>
     <category>PowerOutlet</category>
 
@@ -75,13 +75,14 @@ Jasco Energy Monitoring Lamp Dimmer<br /><h1>Overview</h1><p>Energy Monitoring L
       <parameter name="config_5_1" type="integer" groupName="configuration">
         <label>5: Ignore start level</label>
         <description><![CDATA[
-Ignore start level when receiving zwave dim commands<br /><h1>Overview</h1><p>Every "Dim" command from your remote controller includes a start level embedded in it.  This device can be set to ignore the start level that is part of the dim command</p>
+Ignore start level when receiving zwave dim commands<br /> <h1>Overview</h1><p>Every "Dim" command from your remote controller includes a start level embedded in it.  This device can be set to ignore the start level that is part of the dim command</p>
         ]]></description>
         <default>1</default>
         <options>
           <option value="0">Obey commend start level</option>
           <option value="1">Ignore commend start level</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_7_1" type="integer" groupName="configuration"
@@ -89,6 +90,7 @@ Ignore start level when receiving zwave dim commands<br /><h1>Overview</h1><p>Ev
         <label>7: Zwave Dim Steps</label>
         <description>Number of dim steps when receving a zwave dim command</description>
         <default>1</default>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_8_1" type="integer" groupName="configuration"
@@ -96,6 +98,7 @@ Ignore start level when receiving zwave dim commands<br /><h1>Overview</h1><p>Ev
         <label>8: Zwave Step Timing</label>
         <description>Timing of dim steps when receving a zwave dim command</description>
         <default>3</default>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_9_1" type="integer" groupName="configuration"
@@ -103,6 +106,7 @@ Ignore start level when receiving zwave dim commands<br /><h1>Overview</h1><p>Ev
         <label>9: Rocker Dim Steps</label>
         <description>Number of dim steps when pressing the rocker</description>
         <default>1</default>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_10_1" type="integer" groupName="configuration"
@@ -110,6 +114,7 @@ Ignore start level when receiving zwave dim commands<br /><h1>Overview</h1><p>Ev
         <label>10: Rocker Step Timing</label>
         <description>Timing of dim steps when pressing the rocker</description>
         <default>3</default>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_11_1" type="integer" groupName="configuration"
@@ -117,6 +122,7 @@ Ignore start level when receiving zwave dim commands<br /><h1>Overview</h1><p>Ev
         <label>11: Zwave Dim Steps - All Command</label>
         <description>Number of dim steps when receving a zwave All-On or All-off command</description>
         <default>1</default>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_12_1" type="integer" groupName="configuration"
@@ -124,6 +130,7 @@ Ignore start level when receiving zwave dim commands<br /><h1>Overview</h1><p>Ev
         <label>12: Zwave Step Timing - All Command</label>
         <description>Timing of dim steps when receving a zwave All-On or All-Off command</description>
         <default>3</default>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <!-- STATIC DEFINITIONS -->

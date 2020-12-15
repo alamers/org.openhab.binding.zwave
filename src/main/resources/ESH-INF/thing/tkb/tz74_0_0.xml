@@ -8,7 +8,7 @@
   <thing-type id="tkb_tz74_00_000" listed="false">
     <label>TZ74 Insert two channel switch module</label>
     <description><![CDATA[
-Insert two channel switch module<br /><h1>Overview</h1><p>This z-wave in-wall dual relay switch module TZ74 is a transceiver which is a Z-WaveTM enabled device and is fully compatible with any Z-WaveTM enabled network. Mini size design let the module can easily hide itself into the wall box and that will be good for the house decoration. There are many kind of application by using the module to switch AC power On and Off , one main application is the light control. The new smart relay calibration technology can reduce the inrush current caused by the load and let the module work perfectly with many kind of light like incandescent, fluorescent and LED light.</p> <br /><h2>Inclusion Information</h2><p>Have Z-Wave Controller entered inclusion mode. Pressing On/Off button three times within 1.5 seconds will enter inclusion mode.</p> <br /><h2>Exclusion Information</h2><p>Have Z-Wave controller entered exclusion mode. Pressing On/Off button three times within 1.5 seconds will enter exclusion mode.</p>
+Insert two channel switch module<br /> <h1>Overview</h1><p>This z-wave in-wall dual relay switch module TZ74 is a transceiver which is a Z-WaveTM enabled device and is fully compatible with any Z-WaveTM enabled network. Mini size design let the module can easily hide itself into the wall box and that will be good for the house decoration. There are many kind of application by using the module to switch AC power On and Off , one main application is the light control. The new smart relay calibration technology can reduce the inrush current caused by the load and let the module work perfectly with many kind of light like incandescent, fluorescent and LED light.</p> <br /> <h2>Inclusion Information</h2><p>Have Z-Wave Controller entered inclusion mode. Pressing On/Off button three times within 1.5 seconds will enter inclusion mode.</p> <br /> <h2>Exclusion Information</h2><p>Have Z-Wave controller entered exclusion mode. Pressing On/Off button three times within 1.5 seconds will enter exclusion mode.</p>
     ]]></description>
     <category>WallSwitch</category>
 
@@ -73,6 +73,7 @@ Insert two channel switch module<br /><h1>Overview</h1><p>This z-wave in-wall du
           <option value="0">LED is off when load is off</option>
           <option value="1">LED is on when load is off</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_2_1" type="integer" groupName="configuration">
@@ -83,6 +84,7 @@ Insert two channel switch module<br /><h1>Overview</h1><p>This z-wave in-wall du
           <option value="0">socket status depends on switch</option>
           <option value="1">socket status is same as before power outage</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_3_1" type="integer" groupName="configuration">
@@ -93,6 +95,7 @@ Insert two channel switch module<br /><h1>Overview</h1><p>This z-wave in-wall du
           <option value="0">Normal</option>
           <option value="1">In the edge mode invert switch</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_4_1" type="integer" groupName="configuration">
@@ -104,6 +107,7 @@ Insert two channel switch module<br /><h1>Overview</h1><p>This z-wave in-wall du
           <option value="2">Pulse Mode</option>
           <option value="3">Edge-toggle Mode</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <!-- ASSOCIATION DEFINITIONS -->

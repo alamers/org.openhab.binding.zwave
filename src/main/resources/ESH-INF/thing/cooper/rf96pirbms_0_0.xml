@@ -8,7 +8,7 @@
   <thing-type id="cooper_rf96pirbms_00_000" listed="false">
     <label>RF96PIRBMS Motion Sensor</label>
     <description><![CDATA[
-Motion Sensor<br /><h1>Overview</h1><p>Z-Wave Plus Wireless Motion Sensor, with 120 degree field of view &amp; 1000 sq. ft coverage, detects motion in a space with in-built Passive Infra-red &amp; light sensor.</p> <br /><h2>Inclusion Information</h2><p>The sensor supports Auto Inclusion feature where it will automatically enter Inclusion mode when first powered up after a factory reset.</p> <p> Manual Inclusion:</p> <ul><li>Put the Z-Wave Controller into Inclusion mode</li> <li>Press the tamper switch 3 times within 1.5 seconds to put the unit into inclusion mode</li> </ul><br /><h2>Exclusion Information</h2><ul><li>1. Put the Z-Wave Controller into Exclusion mode</li> <li>2. Press the tamper switch 3 times within 1.5 seconds to put the unit into exclusion mode</li> </ul><br /><h2>Wakeup Information</h2><p>To save power for the battery, the motion sensor is normally in sleep mode. In order to wake the device up, press the tamper switch once. This will keep the device awake for 30 seconds indicated by the LED blinking every second.</p> <p>While this is the official wakeup procedure in the device manual, it did not work.  Pressing the tamper switch 5 to 6 times quickly did wake the device up.</p>
+Motion Sensor<br /> <h1>Overview</h1><p>Z-Wave Plus Wireless Motion Sensor, with 120 degree field of view &amp; 1000 sq. ft coverage, detects motion in a space with in-built Passive Infra-red &amp; light sensor.</p> <br /> <h2>Inclusion Information</h2><p>The sensor supports Auto Inclusion feature where it will automatically enter Inclusion mode when first powered up after a factory reset.</p> <p> Manual Inclusion:</p> <ul><li>Put the Z-Wave Controller into Inclusion mode</li> <li>Press the tamper switch 3 times within 1.5 seconds to put the unit into inclusion mode</li> </ul> <br /> <h2>Exclusion Information</h2><ul><li>1. Put the Z-Wave Controller into Exclusion mode</li> <li>2. Press the tamper switch 3 times within 1.5 seconds to put the unit into exclusion mode</li> </ul> <br /> <h2>Wakeup Information</h2><p>To save power for the battery, the motion sensor is normally in sleep mode. In order to wake the device up, press the tamper switch once. This will keep the device awake for 30 seconds indicated by the LED blinking every second.</p> <p>While this is the official wakeup procedure in the device manual, it did not work.  Pressing the tamper switch 5 to 6 times quickly did wake the device up.</p>
     ]]></description>
     <category>MotionDetector</category>
 
@@ -63,6 +63,7 @@ Motion Sensor<br /><h1>Overview</h1><p>Z-Wave Plus Wireless Motion Sensor, with 
         <label>1: Basic Set Level</label>
         <description>Basic Set Level</description>
         <default>99</default>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_3_1" type="integer" groupName="configuration"
@@ -70,6 +71,7 @@ Motion Sensor<br /><h1>Overview</h1><p>Z-Wave Plus Wireless Motion Sensor, with 
         <label>3: Sensitivity Level</label>
         <description>Sensitivity Level</description>
         <default>6</default>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_4_2" type="integer" groupName="configuration"
@@ -77,6 +79,7 @@ Motion Sensor<br /><h1>Overview</h1><p>Z-Wave Plus Wireless Motion Sensor, with 
         <label>4: Re-trigger Interval Setting</label>
         <description>Re-trigger Interval Setting</description>
         <default>180</default>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_5_1" type="integer" groupName="configuration"
@@ -84,6 +87,7 @@ Motion Sensor<br /><h1>Overview</h1><p>Z-Wave Plus Wireless Motion Sensor, with 
         <label>5: Lux Level</label>
         <description>Lux Level</description>
         <default>20</default>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_6_2" type="integer" groupName="configuration"
@@ -91,6 +95,7 @@ Motion Sensor<br /><h1>Overview</h1><p>Z-Wave Plus Wireless Motion Sensor, with 
         <label>6: On-Off Duration</label>
         <description>On-Off Duration</description>
         <default>15</default>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <!-- ASSOCIATION DEFINITIONS -->

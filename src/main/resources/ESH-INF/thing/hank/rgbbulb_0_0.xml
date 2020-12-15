@@ -8,7 +8,7 @@
   <thing-type id="hank_rgbbulb_00_000" listed="false">
     <label>RGB bulb HKZW-RGB01-V1.0</label>
     <description><![CDATA[
-HKZW-RGB01-V1.0<br /><h1>Overview</h1><p>A smart bulb with over 16 million colors</p> <br /><h2>Inclusion Information</h2><p>Toggle the wall switch off and on 3 times quickly (within 3 seconds) ending with On</p> <br /><h2>Exclusion Information</h2><p>Toggle the wall switch off and on 3 times quickly (within 3 seconds) ending with On</p>
+HKZW-RGB01-V1.0<br /> <h1>Overview</h1><p>A smart bulb with over 16 million colors</p> <br /> <h2>Inclusion Information</h2><p>Toggle the wall switch off and on 3 times quickly (within 3 seconds) ending with On</p> <br /> <h2>Exclusion Information</h2><p>Toggle the wall switch off and on 3 times quickly (within 3 seconds) ending with On</p>
     ]]></description>
     <category>LightBulb</category>
 
@@ -78,12 +78,13 @@ HKZW-RGB01-V1.0<br /><h1>Overview</h1><p>A smart bulb with over 16 million color
           <option value="1">On</option>
           <option value="2">Off</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_24_1" type="integer" groupName="configuration">
         <label>24: Notification when Load status change</label>
         <description><![CDATA[
-RGB BULB can send notifications to associated device<br /><h1>Overview</h1><p>RGB BULB can send notifications to associated device (Group Lifeline) when the status of the RGB BULB is changed.</p>
+RGB BULB can send notifications to associated device<br /> <h1>Overview</h1><p>RGB BULB can send notifications to associated device (Group Lifeline) when the status of the RGB BULB is changed.</p>
         ]]></description>
         <default>1</default>
         <options>
@@ -91,6 +92,7 @@ RGB BULB can send notifications to associated device<br /><h1>Overview</h1><p>RG
           <option value="1">Send BASIC REPORT</option>
           <option value="2">Send BASIC REPORT only without status change</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_51_1" type="integer" groupName="configuration">
@@ -101,12 +103,13 @@ RGB BULB can send notifications to associated device<br /><h1>Overview</h1><p>RG
           <option value="0">Disable</option>
           <option value="1">Enable</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_61_4" type="integer" groupName="configuration">
         <label>61: Advance mode</label>
         <description><![CDATA[
-RGB BULB can blink or cyclic/random change color automatically at set intervals.<br /><h1>Overview</h1><p>RGB BULB can blink or cyclic/random change color automatically at set intervals. It will stop blink or change color when receiving any control command like Basic Set</p>
+RGB BULB can blink or cyclic/random change color automatically at set intervals.<br /> <h1>Overview</h1><p>RGB BULB can blink or cyclic/random change color automatically at set intervals. It will stop blink or change color when receiving any control command like Basic Set</p>
         ]]></description>
         <default>3072</default>
         <options>
@@ -120,6 +123,7 @@ RGB BULB can blink or cyclic/random change color automatically at set intervals.
           <option value="318816256">Blink with a specific color</option>
         </options>
         <advanced>true</advanced>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_255_4" type="integer" groupName="configuration"
@@ -130,7 +134,6 @@ RGB BULB can blink or cyclic/random change color automatically at set intervals.
         <options>
           <option value="1431655765">Resetting to the factory default</option>
         </options>
-        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <!-- ASSOCIATION DEFINITIONS -->

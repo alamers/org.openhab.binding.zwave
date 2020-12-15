@@ -8,7 +8,7 @@
   <thing-type id="nodon_crc3100_00_000" listed="false">
     <label>CRC-3100 Octan Remote Control</label>
     <description><![CDATA[
-Octan Remote Control<br /><h1>Overview</h1><p>The Octan remote is capable to launch up to 16 different scenes through your home automation gateway</p> <br /><h2>Inclusion Information</h2><p>Place your home automation gateway into “Inclusion” Mode.</p> <p>Simultaneously push on circle button and plus button, during 1sec. The LED glows in pink to confirm the selection.</p> <p>Push on circle button within 10 seconds.</p> <p>The LED blinks in pink to confirm your choice</p> <p>The LED blinks in green to confirm the procedure</p> <br /><h2>Exclusion Information</h2><p>Place your home automation gateway into “Exclusion” Mode.</p> <p>Simultaneously push on circle button and plus button, during 1sec. The LED glows in pink to confirm the selection.</p> <p>Push on circle button within 10 seconds.</p> <p>The LED blinks in pink to confirm your choice</p> <p>The LED blinks in green to confirm the procedure</p> <br /><h2>Wakeup Information</h2><p>When the product in ""Gateway"" mode, any action on button will send a wake up notification to the gateway.</p>
+Octan Remote Control<br /> <h1>Overview</h1><p>The Octan remote is capable to launch up to 16 different scenes through your home automation gateway</p> <br /> <h2>Inclusion Information</h2><p>Place your home automation gateway into “Inclusion” Mode.</p> <p>Simultaneously push on circle button and plus button, during 1sec. The LED glows in pink to confirm the selection.</p> <p>Push on circle button within 10 seconds.</p> <p>The LED blinks in pink to confirm your choice</p> <p>The LED blinks in green to confirm the procedure</p> <br /> <h2>Exclusion Information</h2><p>Place your home automation gateway into “Exclusion” Mode.</p> <p>Simultaneously push on circle button and plus button, during 1sec. The LED glows in pink to confirm the selection.</p> <p>Push on circle button within 10 seconds.</p> <p>The LED blinks in pink to confirm your choice</p> <p>The LED blinks in green to confirm the procedure</p> <br /> <h2>Wakeup Information</h2><p>When the product in ""Gateway"" mode, any action on button will send a wake up notification to the gateway.</p>
     ]]></description>
     <category>RemoteControl</category>
 
@@ -61,6 +61,7 @@ Octan Remote Control<br /><h1>Overview</h1><p>The Octan remote is capable to lau
           <option value="1">Mono</option>
           <option value="2">Duo</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_2_1" type="integer" groupName="configuration">
@@ -72,6 +73,7 @@ Octan Remote Control<br /><h1>Overview</h1><p>The Octan remote is capable to lau
           <option value="1">Mono</option>
           <option value="2">Duo</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_3_1" type="integer" groupName="configuration">
@@ -82,6 +84,7 @@ Octan Remote Control<br /><h1>Overview</h1><p>The Octan remote is capable to lau
           <option value="0">Central Scene</option>
           <option value="1">Scene Activation</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_4_1" type="integer" groupName="configuration">
@@ -93,6 +96,7 @@ Octan Remote Control<br /><h1>Overview</h1><p>The Octan remote is capable to lau
           <option value="1">All switches ON</option>
           <option value="2">All switches OFF</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_5_1" type="integer" groupName="configuration">
@@ -104,6 +108,7 @@ Octan Remote Control<br /><h1>Overview</h1><p>The Octan remote is capable to lau
           <option value="1">All switches ON</option>
           <option value="2">All switches OFF</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_6_1" type="integer" groupName="configuration">
@@ -115,6 +120,7 @@ Octan Remote Control<br /><h1>Overview</h1><p>The Octan remote is capable to lau
           <option value="1">All switches ON</option>
           <option value="2">All switches OFF</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_7_1" type="integer" groupName="configuration">
@@ -126,6 +132,7 @@ Octan Remote Control<br /><h1>Overview</h1><p>The Octan remote is capable to lau
           <option value="1">All switches ON</option>
           <option value="2">All switches OFF</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_8_1" type="integer" groupName="configuration">
@@ -138,13 +145,14 @@ Octan Remote Control<br /><h1>Overview</h1><p>The Octan remote is capable to lau
           <option value="2">Blink to confirm command</option>
           <option value="3">Flash Blue and blink to confirm command</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <!-- ASSOCIATION DEFINITIONS -->
       <parameter name="group_1" type="text" groupName="association">
         <label>1: Lifeline</label>
         <description><![CDATA[
-<br /><h1>Overview</h1>
+<br /> <h1>Overview</h1>
         ]]></description>
       </parameter>
 

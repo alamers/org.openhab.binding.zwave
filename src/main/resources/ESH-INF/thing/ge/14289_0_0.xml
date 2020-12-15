@@ -8,7 +8,7 @@
   <thing-type id="ge_14289_00_000" listed="false">
     <label>GE 14289 (ZW3009) In-Wall Touch Sensing Dimmer</label>
     <description><![CDATA[
-In-Wall Touch Sensing Dimmer<br /><h1>Overview</h1><p>Put smart lighting control at your fingertips with the GE Z-Wave Plus Touch Sensing Dimmer. Control your lights with simple one touch dimming at the wall, by a mobile device from virtually anywhere, or by voice with Amazon Alexa or Google Assistant. The GE Z-Wave Plus Touch Dimmer offers extremely smooth and precise dimming control to detect different gestures such touch, hold, and swipe. Tap anywhere on the capacitive touch sensor to turn lights on or off and slide your finger up or down to seamlessly and smoothly adjust the brightness level of dimmable lights. The GE Touch Dimmer remembers your last brightness setting and automatically returns your lights to that level when turned on again. On, off and brightness levels can also be controlled and scheduled from anywhere! Along with conveniently saving you time and energy costs, the GE Z-Wave dimmer switch can replace any existing light switch in your home, and can be used in 2-, 3- and 4-way applications. You may also coordinate the Z-Wave dimmer with your home’s decor using the included white and light almond touch pad. Experience the comfort of smart home automation with the GE Z-Wave Plus In-Wall Touch Sensing Smart Dimmer.</p> <br /><h2>Inclusion Information</h2><ol><li>Follow the instructions for your Z-Wave controller to add a device tothe Z-Wave network.</li> <li>Once the controller is ready to add your device, press and release anywhere on the touch panel.</li> </ol><br /><h2>Exclusion Information</h2><ol><li>Follow the instructions for your Z-Wave controller to remove a device from the Z-Wave network.</li> <li>Once the controller is ready to remove your device, press and hold the side button (G) of the smart dimmer. While holding, press and release anywhere on the touchpanel, then release the side button to remove it from the network.</li> </ol>
+In-Wall Touch Sensing Dimmer<br /> <h1>Overview</h1><p>Put smart lighting control at your fingertips with the GE Z-Wave Plus Touch Sensing Dimmer. Control your lights with simple one touch dimming at the wall, by a mobile device from virtually anywhere, or by voice with Amazon Alexa or Google Assistant. The GE Z-Wave Plus Touch Dimmer offers extremely smooth and precise dimming control to detect different gestures such touch, hold, and swipe. Tap anywhere on the capacitive touch sensor to turn lights on or off and slide your finger up or down to seamlessly and smoothly adjust the brightness level of dimmable lights. The GE Touch Dimmer remembers your last brightness setting and automatically returns your lights to that level when turned on again. On, off and brightness levels can also be controlled and scheduled from anywhere! Along with conveniently saving you time and energy costs, the GE Z-Wave dimmer switch can replace any existing light switch in your home, and can be used in 2-, 3- and 4-way applications. You may also coordinate the Z-Wave dimmer with your home’s decor using the included white and light almond touch pad. Experience the comfort of smart home automation with the GE Z-Wave Plus In-Wall Touch Sensing Smart Dimmer.</p> <br /> <h2>Inclusion Information</h2><ol><li>Follow the instructions for your Z-Wave controller to add a device tothe Z-Wave network.</li> <li>Once the controller is ready to add your device, press and release anywhere on the touch panel.</li> </ol> <br /> <h2>Exclusion Information</h2><ol><li>Follow the instructions for your Z-Wave controller to remove a device from the Z-Wave network.</li> <li>Once the controller is ready to remove your device, press and hold the side button (G) of the smart dimmer. While holding, press and release anywhere on the touchpanel, then release the side button to remove it from the network.</li> </ol>
     ]]></description>
     <category>WallSwitch</category>
 
@@ -63,6 +63,7 @@ In-Wall Touch Sensing Dimmer<br /><h1>Overview</h1><p>Put smart lighting control
           <option value="1">LED ON / Device ON</option>
           <option value="2">Disable LED</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_4_1" type="integer" groupName="configuration">
@@ -73,6 +74,7 @@ In-Wall Touch Sensing Dimmer<br /><h1>Overview</h1><p>Put smart lighting control
           <option value="0">Default</option>
           <option value="1">Invert Switch</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_7_1" type="integer" groupName="configuration"
@@ -80,6 +82,7 @@ In-Wall Touch Sensing Dimmer<br /><h1>Overview</h1><p>Put smart lighting control
         <label>7: Dim Rate Steps (From Z-Wave Controller)</label>
         <description>Dim Rate Steps (From Z-Wave Controller)</description>
         <default>3</default>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_8_2" type="integer" groupName="configuration"
@@ -87,6 +90,7 @@ In-Wall Touch Sensing Dimmer<br /><h1>Overview</h1><p>Put smart lighting control
         <label>8: Dim Rate Timing (From Z-Wave Controller)</label>
         <description>Dim Rate Timing (From Z-Wave Controller)</description>
         <default>1</default>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_9_1" type="integer" groupName="configuration"
@@ -94,6 +98,7 @@ In-Wall Touch Sensing Dimmer<br /><h1>Overview</h1><p>Put smart lighting control
         <label>9: Dim Rate Steps (When Manually Controlled)</label>
         <description>Dim Rate Steps (When Manually Controlled)</description>
         <default>3</default>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_10_2" type="integer" groupName="configuration"
@@ -101,6 +106,7 @@ In-Wall Touch Sensing Dimmer<br /><h1>Overview</h1><p>Put smart lighting control
         <label>10: Dim Rate Timing (When Manually Controlled)</label>
         <description>Dim Rate Timing (When Manually Controlled)</description>
         <default>1</default>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_11_1" type="integer" groupName="configuration"
@@ -108,15 +114,17 @@ In-Wall Touch Sensing Dimmer<br /><h1>Overview</h1><p>Put smart lighting control
         <label>11: Dim Rate Steps (When Receiving All-On/Off Command)</label>
         <description>Dim Rate Steps (When Receiving All-On/Off Command)</description>
         <default>3</default>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_12_2" type="integer" groupName="configuration"
                  min="1" max="255">
         <label>12: Dim Rate Timing (All-On/Off Command)</label>
         <description><![CDATA[
-Dim Rate Timing (All-On/Off Command)<br /><h1>Overview</h1><p>Dim Rate Timing (When Receiving All-On/Off Command)</p>
+Dim Rate Timing (All-On/Off Command)<br /> <h1>Overview</h1><p>Dim Rate Timing (When Receiving All-On/Off Command)</p>
         ]]></description>
         <default>1</default>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <!-- ASSOCIATION DEFINITIONS -->

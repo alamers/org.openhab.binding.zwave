@@ -8,7 +8,7 @@
   <thing-type id="oomi_ft132_00_000" listed="false">
     <label>FT132 Dual Nano Switch with Energy Metering</label>
     <description><![CDATA[
-Dual Nano Switch with Energy Metering<br /><h1>Overview</h1><p>Fantech Dual Nano Switch is a Z-Wave Smart Switch specifically used to enable Z-Wave command and control (on/off) of any wall switches. <br />In the event of power failure, non-volatile memory retains all programmed information relating to the unit’s operating status. <br />It can connect to 2 external manual switches to control the load ON/OFF independently. Its surface has a pin socket, which can be used for connecting to the touch panel, so you can also use the touch panel to control the Dual Nano Switch. <br />The Dual Nano Switch is also a security Z-Wave device and supports Over The Air (OTA) feature for the products firmware upgrade.</p> <br /><h2>Inclusion Information</h2><p>If you want your In-Wall Smart Switch (Dual) as a non-secure device in your Z-Wave network,press the Action Button once on In-Wall Smart Switch (Dual) when you pair it to your gateway. Ifinclusion is successful, the green LED will be on for 2 seconds, and then return to a solidindication. If inclusion is unsuccessful, the red LED will be on for 2 seconds and then return to acolourful gradient.</p> <br /><h2>Exclusion Information</h2><p>If at some stage, your primary controller is missing or inoperable, you may wish to reset all ofyour In-Wall Smart Switch (Dual)’s settings to their factory defaults. To do this, press and holdthe Action Button for 20 seconds and then release it. Your In-Wall Smart Switch (Dual) will nowbe reset to its original settings, and the green LED will be solid for 2 seconds and then remain thecolourful gradient status as a confirmation.</p>
+Dual Nano Switch with Energy Metering<br /> <h1>Overview</h1><p>Fantech Dual Nano Switch is a Z-Wave Smart Switch specifically used to enable Z-Wave command and control (on/off) of any wall switches. <br />In the event of power failure, non-volatile memory retains all programmed information relating to the unit’s operating status. <br />It can connect to 2 external manual switches to control the load ON/OFF independently. Its surface has a pin socket, which can be used for connecting to the touch panel, so you can also use the touch panel to control the Dual Nano Switch. <br />The Dual Nano Switch is also a security Z-Wave device and supports Over The Air (OTA) feature for the products firmware upgrade.</p> <br /> <h2>Inclusion Information</h2><p>If you want your In-Wall Smart Switch (Dual) as a non-secure device in your Z-Wave network,press the Action Button once on In-Wall Smart Switch (Dual) when you pair it to your gateway. Ifinclusion is successful, the green LED will be on for 2 seconds, and then return to a solidindication. If inclusion is unsuccessful, the red LED will be on for 2 seconds and then return to acolourful gradient.</p> <br /> <h2>Exclusion Information</h2><p>If at some stage, your primary controller is missing or inoperable, you may wish to reset all ofyour In-Wall Smart Switch (Dual)’s settings to their factory defaults. To do this, press and holdthe Action Button for 20 seconds and then release it. Your In-Wall Smart Switch (Dual) will nowbe reset to its original settings, and the green LED will be solid for 2 seconds and then remain thecolourful gradient status as a confirmation.</p>
     ]]></description>
     <category>WallSwitch</category>
 
@@ -163,6 +163,7 @@ Dual Nano Switch with Energy Metering<br /><h1>Overview</h1><p>Fantech Dual Nano
           <option value="0">Disable</option>
           <option value="1">Enable</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_4_1" type="integer" groupName="configuration">
@@ -173,6 +174,7 @@ Dual Nano Switch with Energy Metering<br /><h1>Overview</h1><p>Fantech Dual Nano
           <option value="0">Disable</option>
           <option value="1">Enable</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_20_1" type="integer" groupName="configuration">
@@ -184,6 +186,7 @@ Dual Nano Switch with Energy Metering<br /><h1>Overview</h1><p>Fantech Dual Nano
           <option value="1">Always on</option>
           <option value="2">Always off</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_80_1" type="integer" groupName="configuration">
@@ -196,6 +199,7 @@ Dual Nano Switch with Energy Metering<br /><h1>Overview</h1><p>Fantech Dual Nano
           <option value="2">Send Basic CC report</option>
           <option value="3">Send Hail CC when using the manual switch</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_81_1" type="integer" groupName="configuration">
@@ -206,6 +210,7 @@ Dual Nano Switch with Energy Metering<br /><h1>Overview</h1><p>Fantech Dual Nano
           <option value="0">Send Nothing</option>
           <option value="1">Send Basic Set CC</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_82_1" type="integer" groupName="configuration">
@@ -216,6 +221,7 @@ Dual Nano Switch with Energy Metering<br /><h1>Overview</h1><p>Fantech Dual Nano
           <option value="0">Send Nothing</option>
           <option value="1">Send Basic Set CC</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_90_1" type="integer" groupName="configuration">
@@ -226,6 +232,7 @@ Dual Nano Switch with Energy Metering<br /><h1>Overview</h1><p>Fantech Dual Nano
           <option value="0">Disable</option>
           <option value="1">Enable</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_91_2" type="integer" groupName="configuration"
@@ -233,6 +240,7 @@ Dual Nano Switch with Energy Metering<br /><h1>Overview</h1><p>Fantech Dual Nano
         <label>91: Set the threshold value of wattage.</label>
         <description>Set the threshold value of wattage.</description>
         <default>25</default>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_92_1" type="integer" groupName="configuration"
@@ -240,12 +248,14 @@ Dual Nano Switch with Energy Metering<br /><h1>Overview</h1><p>Fantech Dual Nano
         <label>92: Set the threshold value of percent power</label>
         <description>Set the threshold value of wattage.</description>
         <default>5</default>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_100_1_wo" type="integer" groupName="configuration">
         <label>100: Set parameter 101-103 to default value</label>
         <description>Reset the parameter 101-103</description>
         <default>0</default>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_101_4" type="integer" groupName="configuration">
@@ -266,6 +276,7 @@ Dual Nano Switch with Energy Metering<br /><h1>Overview</h1><p>Fantech Dual Nano
           <option value="524288">Meter Report of current (A) on Channel 1</option>
           <option value="1048576">Meter Report of current (A) on Channel 2</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_102_1" type="integer" groupName="configuration">
@@ -286,6 +297,7 @@ Dual Nano Switch with Energy Metering<br /><h1>Overview</h1><p>Fantech Dual Nano
           <option value="524288">Meter Report of current (A) on Channel 1</option>
           <option value="1048576">Meter Report of current (A) on Channel 2</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_103_1" type="integer" groupName="configuration">
@@ -306,6 +318,7 @@ Dual Nano Switch with Energy Metering<br /><h1>Overview</h1><p>Fantech Dual Nano
           <option value="524288">Meter Report of current (A) on Channel 1</option>
           <option value="1048576">Meter Report of current (A) on Channel 2</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_110_1_wo" type="integer" groupName="configuration">
@@ -313,33 +326,37 @@ Dual Nano Switch with Energy Metering<br /><h1>Overview</h1><p>Fantech Dual Nano
         <description>Set parameter 111-113 to default value.</description>
         <default>0</default>
         <advanced>true</advanced>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_111_4" type="integer" groupName="configuration"
                  min="1" max="2147483647">
         <label>111: Automatic report interval for Report group 1.</label>
         <description><![CDATA[
-Automatic report interval for Report group 1.<br /><h1>Overview</h1><p>Set the interval of automatic report for Report group 1.</p>
+Automatic report interval for Report group 1.<br /> <h1>Overview</h1><p>Set the interval of automatic report for Report group 1.</p>
         ]]></description>
         <default>10</default>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_112_4" type="integer" groupName="configuration"
                  min="1" max="2147483647">
         <label>112: Automatic report interval for Report group 2</label>
         <description><![CDATA[
-Automatic report interval for Report group 2<br /><h1>Overview</h1><p>Set the interval of automatic report for Report group 2</p>
+Automatic report interval for Report group 2<br /> <h1>Overview</h1><p>Set the interval of automatic report for Report group 2</p>
         ]]></description>
         <default>600</default>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_113_4" type="integer" groupName="configuration"
                  min="1" max="2147483647">
         <label>113: Automatic report interval for Report group 3</label>
         <description><![CDATA[
-Automatic report interval for Report group 3<br /><h1>Overview</h1><p>Set the interval of automatic report for Report group 3.</p>
+Automatic report interval for Report group 3<br /> <h1>Overview</h1><p>Set the interval of automatic report for Report group 3.</p>
         ]]></description>
         <default>600</default>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_120_1" type="integer" groupName="configuration">
@@ -352,6 +369,7 @@ Automatic report interval for Report group 3<br /><h1>Overview</h1><p>Set the in
           <option value="2">3 way switch mode</option>
           <option value="3">Momentary push button mode</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_121_1" type="integer" groupName="configuration">
@@ -364,6 +382,7 @@ Automatic report interval for Report group 3<br /><h1>Overview</h1><p>Set the in
           <option value="2">3 way switch mode</option>
           <option value="3">Momentary push button mode</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_122_1" type="integer" groupName="configuration">
@@ -375,6 +394,7 @@ Automatic report interval for Report group 3<br /><h1>Overview</h1><p>Set the in
           <option value="2">control the other nodes</option>
           <option value="3">control the output of itself and others</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_252_1" type="integer" groupName="configuration">
@@ -386,6 +406,7 @@ Automatic report interval for Report group 3<br /><h1>Overview</h1><p>Set the in
           <option value="1">Lock</option>
         </options>
         <advanced>true</advanced>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_255_4" type="integer" groupName="configuration">
@@ -396,6 +417,7 @@ Automatic report interval for Report group 3<br /><h1>Overview</h1><p>Set the in
           <option value="0">(Default) Reset all configuration parameters</option>
           <option value="1431655765">Reset &amp; Remove from Network</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <!-- ASSOCIATION DEFINITIONS -->

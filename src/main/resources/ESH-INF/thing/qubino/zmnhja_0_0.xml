@@ -8,7 +8,7 @@
   <thing-type id="qubino_zmnhja_00_000" listed="false">
     <label>ZMNHJA Flush Pilot</label>
     <description><![CDATA[
-Flush Pilot<br /><h1>Overview</h1><p>This Z-Wave module is used to control electric Radiators with 6 different working modes by pilot wire control signal. The module can be controlled either through a Z-Wave network or through the wall switch. </p> <br /><h2>Inclusion Information</h2><ul><li>press service button S for more than 2 second or</li> <li>press push button I1 three times within 3s (3 times change switch state within 3 seconds). </li> </ul><br /><h2>Exclusion Information</h2><ul><li>press service button S for more than 6 second or</li> <li>press push button I1 five times within 3s ( 5 times change switch state within 3 seconds) in the first 60 seconds after the module is connected to the power supply.</li> </ul>
+Flush Pilot<br /> <h1>Overview</h1><p>This Z-Wave module is used to control electric Radiators with 6 different working modes by pilot wire control signal. The module can be controlled either through a Z-Wave network or through the wall switch. </p> <br /> <h2>Inclusion Information</h2><ul><li>press service button S for more than 2 second or</li> <li>press push button I1 three times within 3s (3 times change switch state within 3 seconds). </li> </ul> <br /> <h2>Exclusion Information</h2><ul><li>press service button S for more than 6 second or</li> <li>press push button I1 five times within 3s ( 5 times change switch state within 3 seconds) in the first 60 seconds after the module is connected to the power supply.</li> </ul>
     ]]></description>
     <category>WallSwitch</category>
 
@@ -85,6 +85,7 @@ Flush Pilot<br /><h1>Overview</h1><p>This Z-Wave module is used to control elect
           <option value="0">mono-stable switch type (push button)</option>
           <option value="1">bi-stable switch type</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_2_1" type="integer" groupName="configuration">
@@ -94,6 +95,7 @@ Flush Pilot<br /><h1>Overview</h1><p>This Z-Wave module is used to control elect
           <option value="0">mono-stable switch type (push button)</option>
           <option value="1">bi-stable switch type</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_3_1" type="integer" groupName="configuration">
@@ -103,6 +105,7 @@ Flush Pilot<br /><h1>Overview</h1><p>This Z-Wave module is used to control elect
           <option value="0">mono-stable switch type (push button)</option>
           <option value="1">bi-stable switch type</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_4_1" type="integer" groupName="configuration">
@@ -112,6 +115,7 @@ Flush Pilot<br /><h1>Overview</h1><p>This Z-Wave module is used to control elect
           <option value="0">NO (normally open) input type</option>
           <option value="1">NC (normally close) input type</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_5_1" type="integer" groupName="configuration">
@@ -121,6 +125,7 @@ Flush Pilot<br /><h1>Overview</h1><p>This Z-Wave module is used to control elect
           <option value="0">NO (normally open) input type</option>
           <option value="1">NC (normally close) input type</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_6_1" type="integer" groupName="configuration">
@@ -130,6 +135,7 @@ Flush Pilot<br /><h1>Overview</h1><p>This Z-Wave module is used to control elect
           <option value="0">NO (normally open) input type</option>
           <option value="1">NC (normally close) input type</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_11_1" type="integer" groupName="configuration">
@@ -144,6 +150,7 @@ Flush Pilot<br /><h1>Overview</h1><p>This Z-Wave module is used to control elect
           <option value="5">Frost Protection</option>
           <option value="6">Stop</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_12_1" type="integer" groupName="configuration">
@@ -158,6 +165,7 @@ Flush Pilot<br /><h1>Overview</h1><p>This Z-Wave module is used to control elect
           <option value="5">Frost Protection</option>
           <option value="6">Stop</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_13_1" type="integer" groupName="configuration">
@@ -172,6 +180,7 @@ Flush Pilot<br /><h1>Overview</h1><p>This Z-Wave module is used to control elect
           <option value="5">Frost Protection</option>
           <option value="6">Stop</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_30_1" type="integer" groupName="configuration">
@@ -182,6 +191,7 @@ Flush Pilot<br /><h1>Overview</h1><p>This Z-Wave module is used to control elect
           <option value="0">The module saves its state before power failure</option>
           <option value="1">The module does not save the state</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <!-- ASSOCIATION DEFINITIONS -->

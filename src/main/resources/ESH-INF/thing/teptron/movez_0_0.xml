@@ -8,7 +8,7 @@
   <thing-type id="teptron_movez_00_000" listed="false">
     <label>MoveZ ZWave Blind Controllers</label>
     <description><![CDATA[
-ZWave Blind Controllers<br /><h1>Overview</h1><p>Z-Wave retro fit blind motor.</p> <br /><h2>Inclusion Information</h2><ol><li>Set the gateway into inclusion mode (See gateway’s product manual for more information).</li> <li>Set MOVEZ into learn mode. Learn mode is set by press and holding stop button (middle button) for 10 plus seconds. Once both red and green led indicator start blinking together, release stop button to issue node information frame.</li> <li>Because device supports S2 Unauthenticated Class gateway may ask for an option of secure or non-secure inclusion. Please select this as per your preference.</li> <li>Green led blink twice once inclusion process is successfully completed.</li> </ol><br /><h2>Exclusion Information</h2><ol><li>Set gateway into the exclusion mode (See gateway user manual for more information)</li> <li>Set MOVEZ into learn mode. Learn mode is set by press and holding stop button (middle button) for 10 plus seconds. Once both red and green led indicator start blinking together (picture 2, position 5), release stop button to issue node information frame.</li> <li>Red led blink twice once exclusion process is successfully completed.</li> </ol>
+ZWave Blind Controllers<br /> <h1>Overview</h1><p>Z-Wave retro fit blind motor.</p> <br /> <h2>Inclusion Information</h2><ol><li>Set the gateway into inclusion mode (See gateway’s product manual for more information).</li> <li>Set MOVEZ into learn mode. Learn mode is set by press and holding stop button (middle button) for 10 plus seconds. Once both red and green led indicator start blinking together, release stop button to issue node information frame.</li> <li>Because device supports S2 Unauthenticated Class gateway may ask for an option of secure or non-secure inclusion. Please select this as per your preference.</li> <li>Green led blink twice once inclusion process is successfully completed.</li> </ol> <br /> <h2>Exclusion Information</h2><ol><li>Set gateway into the exclusion mode (See gateway user manual for more information)</li> <li>Set MOVEZ into learn mode. Learn mode is set by press and holding stop button (middle button) for 10 plus seconds. Once both red and green led indicator start blinking together (picture 2, position 5), release stop button to issue node information frame.</li> <li>Red led blink twice once exclusion process is successfully completed.</li> </ol>
     ]]></description>
     <category>Blinds</category>
 
@@ -60,6 +60,7 @@ ZWave Blind Controllers<br /><h1>Overview</h1><p>Z-Wave retro fit blind motor.</
         <label>1: Motor’s up speed</label>
         <description>Motor’s up speed</description>
         <default>100</default>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_2_1" type="integer" groupName="configuration"
@@ -67,6 +68,7 @@ ZWave Blind Controllers<br /><h1>Overview</h1><p>Z-Wave retro fit blind motor.</
         <label>2: Motor’s down speed</label>
         <description>Motor’s down speed</description>
         <default>100</default>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_3_1" type="integer" groupName="configuration"
@@ -74,6 +76,7 @@ ZWave Blind Controllers<br /><h1>Overview</h1><p>Z-Wave retro fit blind motor.</
         <label>3: Basic Set 0xFF support</label>
         <description>Basic Set 0xFF support</description>
         <default>1</default>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_4_1" type="integer" groupName="configuration"
@@ -81,6 +84,7 @@ ZWave Blind Controllers<br /><h1>Overview</h1><p>Z-Wave retro fit blind motor.</
         <label>4: Association group 02 control command preference</label>
         <description>Association group 02 control command preference</description>
         <default>0</default>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <!-- ASSOCIATION DEFINITIONS -->

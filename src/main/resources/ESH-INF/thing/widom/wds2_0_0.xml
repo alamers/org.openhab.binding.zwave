@@ -8,7 +8,7 @@
   <thing-type id="widom_wds2_00_000" listed="false">
     <label>WDS2 Widom Smart Double Switch</label>
     <description><![CDATA[
-Widom Smart Double Switch<br /><h1>Overview</h1><p>WiDom Smart Double Switch is an ON/OFF control device designed to independently control two separate loads, suited for being controlled by both remote and local switches. Similarly to the other WiDom “in wall” devices, it can be fully integrated into pre-existing systems and configured to associate configurable behaviors to a specific number of clicks, in full integration with the Z-Wave home automation ecosystem. There are two versions of WiDom Double Switch: L version controlled by Line signal; N version controlled by Neutral signal</p> <br /><h2>Inclusion Information</h2><p>Before including the device the LED status indicator is solid RED. The procedure of inclusion is activated by clicking Add in the inclusion interface and by pressing any sequence of click on the integrated button. As soon as the inclusion procedure initiates the LED indicator starts a sequence of GREEN-BLUE blinks. The device is included in the network when the LED status is OFF and the interview is completed. </p> <br /><h2>Exclusion Information</h2><p>Only a controller can remove the device from the network. After activating the exclusion function by the controller, the device can be removed by setting it in Learning Mode. If you are using the WiDom Multi Sensor Room Controller, the procedure of exclusion can be activated by Removing a node from the Z-Wave network and any click sequence on the integrated button; as soon as the exclusion initiates, the LED indicator starts a sequence of RED-BLUE blinks. The device is excluded from the network when the LED status indicator is solid RED and the App_status in the interface is OK. </p>
+Widom Smart Double Switch<br /> <h1>Overview</h1><p>WiDom Smart Double Switch is an ON/OFF control device designed to independently control two separate loads, suited for being controlled by both remote and local switches. Similarly to the other WiDom “in wall” devices, it can be fully integrated into pre-existing systems and configured to associate configurable behaviors to a specific number of clicks, in full integration with the Z-Wave home automation ecosystem. There are two versions of WiDom Double Switch: L version controlled by Line signal; N version controlled by Neutral signal</p> <br /> <h2>Inclusion Information</h2><p>Before including the device the LED status indicator is solid RED. The procedure of inclusion is activated by clicking Add in the inclusion interface and by pressing any sequence of click on the integrated button. As soon as the inclusion procedure initiates the LED indicator starts a sequence of GREEN-BLUE blinks. The device is included in the network when the LED status is OFF and the interview is completed. </p> <br /> <h2>Exclusion Information</h2><p>Only a controller can remove the device from the network. After activating the exclusion function by the controller, the device can be removed by setting it in Learning Mode. If you are using the WiDom Multi Sensor Room Controller, the procedure of exclusion can be activated by Removing a node from the Z-Wave network and any click sequence on the integrated button; as soon as the exclusion initiates, the LED indicator starts a sequence of RED-BLUE blinks. The device is excluded from the network when the LED status indicator is solid RED and the App_status in the interface is OK. </p>
     ]]></description>
     <category>WallSwitch</category>
 
@@ -74,7 +74,7 @@ Widom Smart Double Switch<br /><h1>Overview</h1><p>WiDom Smart Double Switch is 
       <parameter name="config_1_1" type="integer" groupName="configuration">
         <label>1: Numbers of clicks to control Channel 1</label>
         <description><![CDATA[
-Define which sequences of clicks control the load connected to Channel 1/2.<br /><h1>Overview</h1><p>Define which sequences of clicks control the load connected to both Channel 1 and Channel 2, if parameter No. 2 is set to its default value. Otherwise parameter No.1 sets the clicks sequence only for Channel 1 and parameter No. 2 sets the clicks sequence for Channel 2</p>
+Define which sequences of clicks control the load connected to Channel 1/2.<br /> <h1>Overview</h1><p>Define which sequences of clicks control the load connected to both Channel 1 and Channel 2, if parameter No. 2 is set to its default value. Otherwise parameter No.1 sets the clicks sequence only for Channel 1 and parameter No. 2 sets the clicks sequence for Channel 2</p>
         ]]></description>
         <default>7</default>
         <options>
@@ -87,6 +87,7 @@ Define which sequences of clicks control the load connected to Channel 1/2.<br /
           <option value="6">TWO_CLICKS or THREE_CLICKS</option>
           <option value="7">ONE_CLICK, TWO_CLICKS or THREE_CLICKS</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_2_1" type="integer" groupName="configuration">
@@ -104,6 +105,7 @@ Define which sequences of clicks control the load connected to Channel 1/2.<br /
           <option value="7">ONE_CLICK, TWO_CLICKS or THREE_CLICKS</option>
           <option value="8">EQUAL_TO_CHANNEL_1</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_4_1" type="integer" groupName="configuration">
@@ -115,6 +117,7 @@ Define which sequences of clicks control the load connected to Channel 1/2.<br /
           <option value="0">Basic Set OFF</option>
           <option value="100">Basic Set with same value of channel status</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_5_1" type="integer" groupName="configuration">
@@ -126,6 +129,7 @@ Define which sequences of clicks control the load connected to Channel 1/2.<br /
           <option value="0">Basic Set OFF</option>
           <option value="100">Basic Set with same value of channel status</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_6_1" type="integer" groupName="configuration">
@@ -137,6 +141,7 @@ Define which sequences of clicks control the load connected to Channel 1/2.<br /
           <option value="0">Basic Set OFF</option>
           <option value="100">Basic Set with same value of channel status</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_7_1" type="integer" groupName="configuration">
@@ -148,6 +153,7 @@ Define which sequences of clicks control the load connected to Channel 1/2.<br /
           <option value="0">Basic Set OFF</option>
           <option value="100">Basic Set with same value of channel status</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_8_1" type="integer" groupName="configuration">
@@ -159,6 +165,7 @@ Define which sequences of clicks control the load connected to Channel 1/2.<br /
           <option value="0">Basic Set OFF</option>
           <option value="100">Basic Set with same value of channel status</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_9_1" type="integer" groupName="configuration">
@@ -170,6 +177,7 @@ Define which sequences of clicks control the load connected to Channel 1/2.<br /
           <option value="0">Basic Set OFF</option>
           <option value="100">Basic Set with same value of channel status</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_10_2" type="integer" groupName="configuration"
@@ -177,6 +185,7 @@ Define which sequences of clicks control the load connected to Channel 1/2.<br /
         <label>10: Timer to switch OFF the Channel 1</label>
         <description>Defines the time after which the Channel 1 is switched OFF</description>
         <default>0</default>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_11_2" type="integer" groupName="configuration"
@@ -184,6 +193,7 @@ Define which sequences of clicks control the load connected to Channel 1/2.<br /
         <label>11: Timer to switch OFF the Channel 2</label>
         <description>Defines the time after which the Channel 2 is switched OFF</description>
         <default>0</default>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_12_2" type="integer" groupName="configuration"
@@ -191,6 +201,7 @@ Define which sequences of clicks control the load connected to Channel 1/2.<br /
         <label>12: Timer to switch ON the Channel 1</label>
         <description>Defines the time after which the Channel 1 is switched ON</description>
         <default>0</default>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_13_2" type="integer" groupName="configuration"
@@ -198,12 +209,13 @@ Define which sequences of clicks control the load connected to Channel 1/2.<br /
         <label>13: Timer to switch ON the Channel 2</label>
         <description>Defines the time after which the Channel 2 is switched ON</description>
         <default>0</default>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_40_1" type="integer" groupName="configuration">
         <label>40: Local Scenario</label>
         <description><![CDATA[
-Defines the behavior of the device Channels<br /><h1>Overview</h1><p>Defines the behavior of the device Channels when the I1/I2 buttons receive a valid number of clicks (see Parameters No. 1 and No. 2).</p>
+Defines the behavior of the device Channels<br /> <h1>Overview</h1><p>Defines the behavior of the device Channels when the I1/I2 buttons receive a valid number of clicks (see Parameters No. 1 and No. 2).</p>
         ]]></description>
         <default>0</default>
         <options>
@@ -211,6 +223,7 @@ Defines the behavior of the device Channels<br /><h1>Overview</h1><p>Defines the
           <option value="1">NEVER_BOTH_ON</option>
           <option value="2">SEQUENCING_RELAY</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_60_1" type="integer" groupName="configuration">
@@ -224,12 +237,13 @@ Defines the behavior of the device Channels<br /><h1>Overview</h1><p>Defines the
           <option value="3">ON_ON - Both Channel 1 and Channel 2 ON</option>
           <option value="4">PREVIOUS STATUS - Status prior to restart</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_62_1" type="integer" groupName="configuration">
         <label>62: Type of external switch both inputs</label>
         <description><![CDATA[
-Defines the type of external switch connected both to input 1 and input 2.<br /><h1>Overview</h1><p>Defines the type of external switch connected both to input 1 and input 2, if parameter No. 63 is set in its default value. Otherwise parameter No. 62 defines only the switch connected to the input 1 and parameter No. 63 the switch connected to the input 2.</p>
+Defines the type of external switch connected both to input 1 and input 2.<br /> <h1>Overview</h1><p>Defines the type of external switch connected both to input 1 and input 2, if parameter No. 63 is set in its default value. Otherwise parameter No. 62 defines only the switch connected to the input 1 and parameter No. 63 the switch connected to the input 2.</p>
         ]]></description>
         <default>1</default>
         <options>
@@ -237,6 +251,7 @@ Defines the type of external switch connected both to input 1 and input 2.<br />
           <option value="1">BUTTON</option>
           <option value="2">SWITCH</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_63_1" type="integer" groupName="configuration">
@@ -249,6 +264,7 @@ Defines the type of external switch connected both to input 1 and input 2.<br />
           <option value="2">SWITCH</option>
           <option value="3">EQUAL TO SWITCH 1</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <!-- ASSOCIATION DEFINITIONS -->

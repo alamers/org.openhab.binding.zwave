@@ -8,7 +8,7 @@
   <thing-type id="popp_pope700052_00_000" listed="false">
     <label>POPE700052 Water Leakage Sensor</label>
     <description><![CDATA[
-Water Leakage Sensor<br /><h1>Overview</h1><p>The Flood Sensor is a universal Z-Wave compatible flood sensor indicating water leakage in Smart Homes. In case of a detected incident the device will send an alarm message to a central controller and can in parallel directly control a group of devices, e.g. to shut off water supply. On the device it self the water event will be indicated using a red LED and a buzzer. This behavior can be configured. The device can be mounted on a wall for easy maintenance and the water is detected using a cabled detector head. The cable is 90 cm long. The device can also be used without the mounting base and will then flow on the water surface</p> <br /><h2>Inclusion Information</h2><p> A single click on the Z-Wave button inside the device includes and excludes the device.</p> <br /><h2>Exclusion Information</h2><p> A single click on the Z-Wave button inside the device includes and excludes the device.</p> <br /><h2>Wakeup Information</h2><p>To wakeup the device please perform the following action: Double click the internal Button. The red LED will light up to confirm the action.</p>
+Water Leakage Sensor<br /> <h1>Overview</h1><p>The Flood Sensor is a universal Z-Wave compatible flood sensor indicating water leakage in Smart Homes. In case of a detected incident the device will send an alarm message to a central controller and can in parallel directly control a group of devices, e.g. to shut off water supply. On the device it self the water event will be indicated using a red LED and a buzzer. This behavior can be configured. The device can be mounted on a wall for easy maintenance and the water is detected using a cabled detector head. The cable is 90 cm long. The device can also be used without the mounting base and will then flow on the water surface</p> <br /> <h2>Inclusion Information</h2><p> A single click on the Z-Wave button inside the device includes and excludes the device.</p> <br /> <h2>Exclusion Information</h2><p> A single click on the Z-Wave button inside the device includes and excludes the device.</p> <br /> <h2>Wakeup Information</h2><p>To wakeup the device please perform the following action: Double click the internal Button. The red LED will light up to confirm the action.</p>
     ]]></description>
     <category>Sensor</category>
 
@@ -63,6 +63,7 @@ Water Leakage Sensor<br /><h1>Overview</h1><p>The Flood Sensor is a universal Z-
         <label>1: Flood Alarm Basic On Value</label>
         <description>Flood detected</description>
         <default>255</default>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_2_1" type="integer" groupName="configuration" readOnly="true"
@@ -70,6 +71,7 @@ Water Leakage Sensor<br /><h1>Overview</h1><p>The Flood Sensor is a universal Z-
         <label>2: Flood Alarm Basic Off Value</label>
         <description>No Flood detected</description>
         <default>0</default>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_3_1" type="integer" groupName="configuration"
@@ -77,6 +79,7 @@ Water Leakage Sensor<br /><h1>Overview</h1><p>The Flood Sensor is a universal Z-
         <label>3: Enable Buzzer Sound on Alarm</label>
         <description>Buzzer enabled during flood detection</description>
         <default>1</default>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <!-- ASSOCIATION DEFINITIONS -->

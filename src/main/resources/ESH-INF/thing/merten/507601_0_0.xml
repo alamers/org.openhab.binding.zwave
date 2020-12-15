@@ -8,7 +8,7 @@
   <thing-type id="merten_507601_00_000" listed="false">
     <label>507601 Dual Pole Wall Switch</label>
     <description><![CDATA[
-Dual Pole Wall Switch<br /><h1>Overview</h1><p>The flush-mounted CONNECT radio receiver with switch will be referred to below as flush-mounted receiver. The flush-mounted receiver can be used to switch loads on and off via radio (for information about permitted loads, see the technical data). When it receives the radio signal, the flush-mounted receiver switches the corresponding contact.CONNECT radio receiver, flush-mounted, 1-gang switch<br /><br />Switching of ohmic, inductive or capacitive loads. To install in flush-mounted sockets or on a ceiling hook in the ceiling rose.</p> <br /><h2>Inclusion Information</h2><p>Triple click on the switch button</p> <br /><h2>Exclusion Information</h2><p>Triple click on the switch button</p> <br /><h2>Wakeup Information</h2><p>Triple click on the switch button</p>
+Dual Pole Wall Switch<br /> <h1>Overview</h1><p>The flush-mounted CONNECT radio receiver with switch will be referred to below as flush-mounted receiver. The flush-mounted receiver can be used to switch loads on and off via radio (for information about permitted loads, see the technical data). When it receives the radio signal, the flush-mounted receiver switches the corresponding contact.CONNECT radio receiver, flush-mounted, 1-gang switch<br /><br />Switching of ohmic, inductive or capacitive loads. To install in flush-mounted sockets or on a ceiling hook in the ceiling rose.</p> <br /> <h2>Inclusion Information</h2><p>Triple click on the switch button</p> <br /> <h2>Exclusion Information</h2><p>Triple click on the switch button</p> <br /> <h2>Wakeup Information</h2><p>Triple click on the switch button</p>
     ]]></description>
     <category>WallSwitch</category>
 
@@ -51,12 +51,14 @@ Dual Pole Wall Switch<br /><h1>Overview</h1><p>The flush-mounted CONNECT radio r
                  min="0" max="127">
         <label>176: Staircase timer byte 1</label>
         <default>0</default>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_177_1" type="integer" groupName="configuration"
                  min="0" max="127">
         <label>177: Staircase timer byte 2</label>
         <default>0</default>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_183_1" type="integer" groupName="configuration"
@@ -64,6 +66,7 @@ Dual Pole Wall Switch<br /><h1>Overview</h1><p>The flush-mounted CONNECT radio r
         <label>183: Additional limit duration</label>
         <description>(after brief interruption) Unsure what this does</description>
         <default>30</default>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <!-- ASSOCIATION DEFINITIONS -->

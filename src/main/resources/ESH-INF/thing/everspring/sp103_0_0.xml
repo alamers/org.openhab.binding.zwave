@@ -8,7 +8,7 @@
   <thing-type id="everspring_sp103_00_000" listed="false">
     <label>SP103 Motion Detector</label>
     <description><![CDATA[
-Motion Detector<br /><h1>Overview</h1><p>Motion Detector</p> <br /><h2>Inclusion Information</h2><p>Press the tamper switch on the detector to complete the inclusion process.</p> <br /><h2>Exclusion Information</h2><p>Press the tamper switch on the detector to complete the exclusion process.</p> <br /><h2>Wakeup Information</h2><p>Press the tamper switch on the detector to wake the device for 10 minutes.</p>
+Motion Detector<br /> <h1>Overview</h1><p>Motion Detector</p> <br /> <h2>Inclusion Information</h2><p>Press the tamper switch on the detector to complete the inclusion process.</p> <br /> <h2>Exclusion Information</h2><p>Press the tamper switch on the detector to complete the exclusion process.</p> <br /> <h2>Wakeup Information</h2><p>Press the tamper switch on the detector to wake the device for 10 minutes.</p>
     ]]></description>
     <category>MotionDetector</category>
 
@@ -67,6 +67,7 @@ Motion Detector<br /><h1>Overview</h1><p>Motion Detector</p> <br /><h2>Inclusion
           <option value="1">Set ON</option>
           <option value="9">Set LAST Level</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_2_1" type="integer" groupName="configuration">
@@ -77,6 +78,7 @@ Motion Detector<br /><h1>Overview</h1><p>Motion Detector</p> <br /><h2>Inclusion
           <option value="0">Disabled</option>
           <option value="1">Enabled</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <!-- ASSOCIATION DEFINITIONS -->

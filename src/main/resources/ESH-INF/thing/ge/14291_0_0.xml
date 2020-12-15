@@ -8,7 +8,7 @@
   <thing-type id="ge_14291_00_000" listed="false">
     <label>GE 14291 (ZW4005) In-Wall Paddle Switch</label>
     <description><![CDATA[
-In-Wall Paddle Switch<br /><h1>Overview</h1><p>In-Wall Wireless Smart Switch</p> <br /><h2>Inclusion Information</h2><p>Press and release the top or bottom of the wireless smart switch (rocker)</p> <br /><h2>Exclusion Information</h2><p>Press and release the top or bottom of the wireless smart switch (rocker)</p>
+In-Wall Paddle Switch<br /> <h1>Overview</h1><p>In-Wall Wireless Smart Switch</p> <br /> <h2>Inclusion Information</h2><p>Press and release the top or bottom of the wireless smart switch (rocker)</p> <br /> <h2>Exclusion Information</h2><p>Press and release the top or bottom of the wireless smart switch (rocker)</p>
     ]]></description>
     <category>WallSwitch</category>
 
@@ -62,6 +62,7 @@ In-Wall Paddle Switch<br /><h1>Overview</h1><p>In-Wall Wireless Smart Switch</p>
           <option value="1">LED on when switch is ON</option>
           <option value="2">LED always off</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_4_1" type="integer" groupName="configuration">
@@ -72,6 +73,7 @@ In-Wall Paddle Switch<br /><h1>Overview</h1><p>In-Wall Wireless Smart Switch</p>
           <option value="0">No</option>
           <option value="1">Yes</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <!-- ASSOCIATION DEFINITIONS -->

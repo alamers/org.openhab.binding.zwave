@@ -8,7 +8,7 @@
   <thing-type id="devolo_mt02646_00_000" listed="false">
     <label>MT02646 Home Control Metering Plug</label>
     <description><![CDATA[
-Home Control Metering Plug<br /><h1>Overview</h1><p>The Home Control Smart Metering Plug can be plugged into any wall outlet in the home. It enhances every<br />connected device with useful functions, such as time-controlled enabling and disabling or power monitoring </p> <br /><h2>Inclusion Information</h2><p>Push the front button three times rapidly within 2 seconds.</p> <br /><h2>Exclusion Information</h2><p>Push the front button three times rapidly within 2 seconds.</p>
+Home Control Metering Plug<br /> <h1>Overview</h1><p>The Home Control Smart Metering Plug can be plugged into any wall outlet in the home. It enhances every<br />connected device with useful functions, such as time-controlled enabling and disabling or power monitoring </p> <br /> <h2>Inclusion Information</h2><p>Push the front button three times rapidly within 2 seconds.</p> <br /> <h2>Exclusion Information</h2><p>Push the front button three times rapidly within 2 seconds.</p>
     ]]></description>
     <category>PowerOutlet</category>
 
@@ -94,26 +94,24 @@ Home Control Metering Plug<br /><h1>Overview</h1><p>The Home Control Smart Meter
                  min="0" max="32767">
         <label>1: Watt Meter Report Period</label>
         <description><![CDATA[
-multiples of 5s<br /><h1>Overview</h1><p>Enable automatic interval in seconds reporting with an interval of 5s * the value. Set to 0 will disable the autoreporting function.</p>
+multiples of 5s<br /> <h1>Overview</h1><p>Enable automatic interval in seconds reporting with an interval of 5s * the value. Set to 0 will disable the autoreporting function.</p>
         ]]></description>
         <default>720</default>
         <options>
           <option value="0">Disable</option>
         </options>
-        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_2_2" type="integer" groupName="configuration"
                  min="0" max="32767">
         <label>2: KWH Meter Report Period</label>
         <description><![CDATA[
-number of 10 minute intervals<br /><h1>Overview</h1><p>Enable automatic interval in minutes reporting with an interval of 10min * the value. Set to 0 will disable the autoreporting function.</p>
+number of 10 minute intervals<br /> <h1>Overview</h1><p>Enable automatic interval in minutes reporting with an interval of 10min * the value. Set to 0 will disable the autoreporting function.</p>
         ]]></description>
         <default>6</default>
         <options>
           <option value="0">Disable</option>
         </options>
-        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_3_2" type="integer" groupName="configuration"
@@ -121,15 +119,17 @@ number of 10 minute intervals<br /><h1>Overview</h1><p>Enable automatic interval
         <label>3: Threshold of current for Load Caution</label>
         <description>1300*0.01A = 13A</description>
         <default>1300</default>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_4_2" type="integer" groupName="configuration"
                  min="1" max="10000">
         <label>4: Threshold of KWh for Load Caution</label>
         <description><![CDATA[
-load caution threshold<br /><h1>Overview</h1><p>Enable automatic warning when the accumulated kWh power consumption exceeds the setting value from 1KWh ~ 10000KWh.. Set to 0 will disable kWh load caution reporting.</p>
+load caution threshold<br /> <h1>Overview</h1><p>Enable automatic warning when the accumulated kWh power consumption exceeds the setting value from 1KWh ~ 10000KWh.. Set to 0 will disable kWh load caution reporting.</p>
         ]]></description>
         <default>10000</default>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_5_1" type="integer" groupName="configuration">
@@ -141,6 +141,7 @@ load caution threshold<br /><h1>Overview</h1><p>Enable automatic warning when th
           <option value="1">resume previous state</option>
           <option value="2">Switch ON after power on</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_6_1" type="integer" groupName="configuration">
@@ -151,6 +152,7 @@ load caution threshold<br /><h1>Overview</h1><p>Enable automatic warning when th
           <option value="0">SWITCH OFF commands received are ignored.</option>
           <option value="1">SWITCH OFF commands received are honored.</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_7_1" type="integer" groupName="configuration">
@@ -162,6 +164,7 @@ load caution threshold<br /><h1>Overview</h1><p>Enable automatic warning when th
           <option value="2">LED off with load ON</option>
           <option value="3">Flash mode</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_8_2" type="integer" groupName="configuration"
@@ -172,7 +175,6 @@ load caution threshold<br /><h1>Overview</h1><p>Enable automatic warning when th
         <options>
           <option value="0">Disable</option>
         </options>
-        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <parameter name="config_9_1" type="integer" groupName="configuration">
@@ -185,6 +187,7 @@ load caution threshold<br /><h1>Overview</h1><p>Enable automatic warning when th
           <option value="2">If ALL OFF is received, turn ON if it is OFF</option>
           <option value="3">SWITCH ALL OFF turns Switch ON</option>
         </options>
+        <limitToOptions>false</limitToOptions>
       </parameter>
 
       <!-- ASSOCIATION DEFINITIONS -->
